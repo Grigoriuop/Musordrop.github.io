@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
+<link rel="manifest" href="manifest.json">
+  meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MUSOR DROP</title>
 <style>
@@ -1655,6 +1656,9 @@ renderSell();
 setInterval(()=>{
 if($('panel-bonus').classList.contains('on'))renderBonus();
 if($('panel-cases').classList.contains('on'))renderCases();},5000);
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
 </script>
 </body>
 </html>
