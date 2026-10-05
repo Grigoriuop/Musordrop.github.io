@@ -1,0 +1,15 @@
+{
+  "name": "Musordrop",
+  "short_name": "Musordrop",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#49EC3A",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
